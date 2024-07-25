@@ -13,7 +13,7 @@ export const Footer = () => {
                 </h3>
                 <a
                   href="mailto:opencoregroup@gmail.com"
-                  className="flex gap-2 py-2 px-4 md:border-none md:p-0 border border-[#EAECF0] text-[#667085] rounded"
+                  className="flex gap-2 text-sm md:text-base py-2 px-4 md:border-none md:p-0 border border-[#EAECF0] text-[#667085] rounded"
                 >
                   opencoregroup@gmail.com
                   <Image
@@ -108,7 +108,7 @@ export const Footer = () => {
           alt="Opencore logo"
           width={1000}
           height={1000}
-          className="w-full self-center -bottom-6 sm:-bottom-8 md:-bottom-12 lg:-bottom-16 absolute"
+          className="w-full self-center -bottom-3 sm:-bottom-5 md:-bottom-11 lg:-bottom-16 absolute"
         />
       </div>
     </div>
