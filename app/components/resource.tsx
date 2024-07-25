@@ -39,7 +39,7 @@ export const Resource: React.FC<ResourceProps> = ({ resource }) => {
         <div className="flex gap-2">
           <a className="flex gap rounded-sm px-2 py-1 gap-1 lg:bg-[#F9FAFB] text-[#667085] font-medium text-sm">
             <Image
-              src={resource.label_image}
+              src={resource.label_image ? resource.label_image : ""}
               alt="Link icon"
               width={16}
               height={16}

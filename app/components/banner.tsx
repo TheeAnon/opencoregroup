@@ -1,7 +1,18 @@
+import Image from "next/image";
+
 export const Banner = () => {
   return (
-    <div className="bg-[#FCFCFD] p-8">
-      <div className="rounded-3xl bg-gradient-to-t from-[#22405C] to-[#2F5478] flex gap-16 flex-col items-center md:flex-row py-16 px-6 md:justify-around">
+    <div className="bg-[#FCFCFD] p-8 relative overflow-hidden">
+      <div className="rounded-3xl bg-gradient-to-t from-[#22405C] to-[#2F5478] flex gap-16 flex-col items-center md:flex-row py-16 px-6 md:justify-around relative z-10">
+        <div className="absolute top-0 left-0 w-full h-14">
+          <Image
+            src="/mesh.png"
+            alt="mesh"
+            layout="fill"
+            objectFit="cover"
+            style={{ opacity: 0.1 }}
+          />
+        </div>
         <div className="max-w-lg flex flex-col gap-5">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal text-white">
             Transforming your
@@ -18,6 +29,15 @@ export const Banner = () => {
             <br />
             Together!
           </h3>
+        </div>
+        <div className="absolute bottom-0 left-0 w-full h-14">
+          <Image
+            src="/mesh.png"
+            alt="mesh"
+            layout="fill"
+            objectFit="cover"
+            style={{ opacity: 0.1, transform: "rotate(180deg)" }}
+          />
         </div>
       </div>
     </div>
